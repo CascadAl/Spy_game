@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvModeHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Режимы" />
+
+    <ListView
+        android:id="@+id/lvModes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

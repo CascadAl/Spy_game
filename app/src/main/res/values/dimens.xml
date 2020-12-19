@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- ================= MAIN_MENU ================= -->
+    <!-- BTN MAIN_MENU -->
+    <dimen name="btn_main_menu_secondary_width">200dp</dimen>
+    <dimen name="btn_main_menu_play_game_width">250dp</dimen>
+    <dimen name="btn_main_menu_secondary_padding_vertical">0dp</dimen>
+    <dimen name="btn_main_menu_play_game_padding_vertical">15dp</dimen>
+    <dimen name="btn_main_menu_play_game_margin_bottom">20dp</dimen>
+    <dimen name="btn_main_menu_margin_bottom">70dp</dimen>
+
+    <!-- BTN TEXT MAIN_MENU -->
+    <dimen name="btn_text_size_main_menu_play_game">25sp</dimen>
+    <dimen name="btn_text_size_main_menu_secondary">15sp</dimen>
+
+    <!-- LIST VIEW MAIN_MENU -->
+    <dimen name="lv_settings_margin">10dp</dimen>
+    <dimen name="text_settings_size_margin">15dp</dimen>
+
+
+    <!-- ============BTN MAIN MENU settingsgame_layout DELETE -->
+    <dimen name="main_menu_btn_top_margin">200dp</dimen>
+    <dimen name="settings_txt_top_margin">100dp</dimen>
+
+
+
+    <!-- ================= SETTINGS_GAME ================= -->
+    <!-- TEXT SETTINGS_GAME -->
+    <dimen name="text_head_margin_left">15dp</dimen>
+    <dimen name="text_head_margin_bottom">20dp</dimen>
+    <dimen name="text_item_margin_left">15dp</dimen>
+    <dimen name="text_item_desc_margin_left">15dp</dimen>
+
+    <!-- CHECKED SETTINGS_GAME -->
+    <dimen name="selected_margin_right">34dp</dimen>
+    <dimen name="selected_main_margin_right">20dp</dimen>
+    <dimen name="number_picker_margin_right">0dp</dimen>
+    <dimen name="text_item_margin_right">15dp</dimen>
+    <dimen name="text_item_desc_margin_right">15dp</dimen>
+
+    <!-- BTN SETTINGS_GAME -->
+    <dimen name="btn_padding_horizontal">10dp</dimen>
+    <dimen name="btn_padding_vertical">3dp</dimen>
+    <dimen name="btn_min_height">0dp</dimen>
+    <dimen name="btn_min_width">0dp</dimen>
+    <dimen name="btn_margin_vertical">10dp</dimen>
+
+    <!-- BTN SETTINGS_GAME -->
+    <dimen name="btn_main_padding_horizontal">20dp</dimen>
+    <dimen name="btn_main_padding_vertical">5dp</dimen>
+    <dimen name="btn_main_min_height">0dp</dimen>
+    <dimen name="btn_main_min_width">0dp</dimen>
+    <dimen name="btn_main_margin_vertical">5dp</dimen>
+
+    <!-- DIVIDER SETTINGS_GAME -->
+    <dimen name="divider_vertical_margin">10dp</dimen>
+    <dimen name="divider_horizontal_margin">50dp</dimen>
+
+    <!-- TEXT SETTINGS_GAME -->
+    <dimen name="text_head_size">28sp</dimen>
+    <dimen name="text_item_size">18sp</dimen>
+    <dimen name="text_main_item_size">15sp</dimen>
+    <dimen name="text_item_desc_size">12sp</dimen>
+
+    <!-- NUMBER PICKER SETTINGS_GAME / STANDARD_MODE / RAND_MODE / SLY_MODE -->
+    <dimen name="number_picker_width">100dp</dimen>
+    <dimen name="number_picker_height">80dp</dimen>
+    <dimen name="number_picker_layout_width">100dp</dimen>
+    <dimen name="number_picker_layout_height">100dp</dimen>
+    <dimen name="number_picker_text_size">14sp</dimen>
+    <dimen name="number_picker_selected_text_size">20sp</dimen>
+    <dimen name="btn_spy_modes_margin_horizontal">12dp</dimen>
+
+
+
+    <!-- ================= SPY_PLAYER ================= -->
+    <!-- BTN SPY_PLAYER -->
+    <dimen name="spy_txt_top_margin" tools:ignore="DuplicateDefinition">200dp</dimen>
+    <dimen name="text_menu_dimen">20sp</dimen>
+    <dimen name="spy_btn_top_margin">25dp</dimen>
+
+</resources>

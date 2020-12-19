@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvSpiesCnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_item_size"
+        android:textColor="@color/colorTextItem"
+        android:layout_marginStart="@dimen/text_item_margin_left"
+        android:text="@string/spiesCnt" />
+
+    <!--EditText
+        android:id="@+id/etSpiesCnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="2"
+
+        android:text="" /-->
+
+    <com.shawnlin.numberpicker.NumberPicker
+        android:id="@+id/npSpiesCnt"
+        android:layout_width="@dimen/number_picker_layout_width"
+        android:layout_height="@dimen/number_picker_layout_height"
+        app:np_width="@dimen/number_picker_width"
+        app:np_height="@dimen/number_picker_height"
+        app:np_dividerColor="@color/colorPrimary"
+        app:np_selectedTextColor="@color/colorPrimary"
+        app:np_selectedTextSize="@dimen/number_picker_selected_text_size"
+        app:np_textColor="@color/colorPrimary"
+        app:np_textSize="@dimen/number_picker_text_size"
+        app:np_orientation="horizontal"
+        app:np_wrapSelectorWheel="false"
+        android:layout_alignTop="@+id/tvSpiesCnt"
+        android:layout_alignBottom="@+id/tvSpiesCnt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/number_picker_margin_right" />
+
+    <TextView
+        android:id="@+id/tvSpiesCntDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSpiesCnt"
+        android:textSize="@dimen/text_item_desc_size"
+        android:textColor="@color/colorTextItemDesc"
+        android:layout_marginStart="@dimen/text_item_desc_margin_left"
+        android:text="Укажите общее количество шпионов." />
+
+</RelativeLayout>

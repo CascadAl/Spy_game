@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvSpiesCntFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_item_size"
+        android:textColor="@color/colorTextItem"
+        android:layout_marginStart="@dimen/text_item_margin_left"
+        android:text="@string/spiesCntFrom" />
+
+    <com.shawnlin.numberpicker.NumberPicker
+        android:id="@+id/npSpiesCntFrom"
+        android:layout_width="@dimen/number_picker_layout_width"
+        android:layout_height="@dimen/number_picker_layout_height"
+        app:np_width="@dimen/number_picker_width"
+        app:np_height="@dimen/number_picker_height"
+        app:np_dividerColor="@color/colorPrimary"
+        app:np_selectedTextColor="@color/colorPrimary"
+        app:np_selectedTextSize="@dimen/number_picker_selected_text_size"
+        app:np_textColor="@color/colorPrimary"
+        app:np_textSize="@dimen/number_picker_text_size"
+        app:np_orientation="horizontal"
+        app:np_wrapSelectorWheel="false"
+        android:layout_alignTop="@+id/tvSpiesCntFrom"
+        android:layout_alignBottom="@+id/tvSpiesCntFrom"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/number_picker_margin_right" />
+
+    <TextView
+        android:id="@+id/tvSpiesCntTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSpiesCntFrom"
+        android:textSize="@dimen/text_item_size"
+        android:textColor="@color/colorTextItem"
+        android:layout_marginStart="@dimen/text_item_margin_left"
+        android:text="@string/spiesCntTo" />
+
+    <com.shawnlin.numberpicker.NumberPicker
+        android:id="@+id/npSpiesCntTo"
+        android:layout_width="@dimen/number_picker_layout_width"
+        android:layout_height="@dimen/number_picker_layout_height"
+        app:np_width="@dimen/number_picker_width"
+        app:np_height="@dimen/number_picker_height"
+        app:np_dividerColor="@color/colorPrimary"
+        app:np_selectedTextColor="@color/colorPrimary"
+        app:np_selectedTextSize="@dimen/number_picker_selected_text_size"
+        app:np_textColor="@color/colorPrimary"
+        app:np_textSize="@dimen/number_picker_text_size"
+        app:np_orientation="horizontal"
+        app:np_wrapSelectorWheel="false"
+        android:layout_alignTop="@+id/tvSpiesCntTo"
+        android:layout_alignBottom="@+id/tvSpiesCntTo"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/number_picker_margin_right" />
+
+    <TextView
+        android:id="@+id/tvSpiesCntFromToDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSpiesCntTo"
+        android:textSize="@dimen/text_item_desc_size"
+        android:textColor="@color/colorTextItemDesc"
+        android:layout_marginStart="@dimen/text_item_desc_margin_left"
+        android:text="Укажите диапазон шпионов, и программа сама рандомно выберет количество шпионов." />
+
+</RelativeLayout>
+<!--LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/llSpiesFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvSpiesCntFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/spiesCntFrom" />
+
+        <EditText
+            android:id="@+id/etSpiesCntFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="2"
+            android:text="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llSpiesTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvSpiesCntTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/spiesCntTo" />
+
+        <EditText
+            android:id="@+id/etSpiesCntTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="2"
+            android:text="" />
+
+    </LinearLayout>
+
+</LinearLayout-->

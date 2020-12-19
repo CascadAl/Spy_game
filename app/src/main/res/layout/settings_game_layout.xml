@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlSpySettings"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvSettingsHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginStart="@dimen/text_head_margin_left"
+        android:layout_marginBottom="@dimen/text_head_margin_bottom"
+        android:text="@string/settings_head"
+        android:textColor="@color/colorTextHead"
+        android:textSize="@dimen/text_head_size" />
+
+    <Button
+        android:id="@+id/btnStartGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvSettingsHead"
+        android:layout_marginVertical="@dimen/btn_main_margin_vertical"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/selected_main_margin_right"
+        android:background="@drawable/spy_mode_selected_button"
+        android:minWidth="@dimen/btn_main_min_width"
+        android:minHeight="@dimen/btn_main_min_height"
+        android:paddingHorizontal="@dimen/btn_main_padding_horizontal"
+        android:paddingVertical="@dimen/btn_main_padding_vertical"
+        android:onClick="startGame"
+        android:text="@string/start_game_btn"
+        android:textColor="@color/colorTextItem"
+        android:textSize="@dimen/text_main_item_size" />
+
+    <View
+        android:id="@+id/divSpyHeader"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/tvSettingsHead"
+        android:layout_marginBottom="@dimen/divider_vertical_margin"
+        android:background="?android:attr/listDivider" />
+
+    <ScrollView
+        android:id="@+id/svSpySettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divSpyHeader"
+        tools:ignore="ScrollViewCount,UselessParent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--TextView
+                android:id="@+id/tvSettingsHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/text_head_margin_left"
+                android:layout_marginBottom="@dimen/text_head_margin_bottom"
+                android:text="@string/settings_head"
+                android:textColor="@color/colorTextHead"
+                android:textSize="@dimen/text_head_size" /-->
+
+            <TextView
+                android:id="@+id/tvPlayersCnt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/text_item_margin_left"
+                android:text="@string/playersCnt"
+                android:textColor="@color/colorTextItem"
+                android:textSize="@dimen/text_item_size" />
+
+            <!--EditText
+                android:id="@+id/etPlayersCnt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tvPlayersCnt"
+                android:ems="2"
+                android:text="" /-->
+
+            <com.shawnlin.numberpicker.NumberPicker
+                android:id="@+id/npPlayersCnt"
+                android:layout_width="@dimen/number_picker_layout_width"
+                android:layout_height="@dimen/number_picker_layout_height"
+                android:layout_alignTop="@+id/tvPlayersCnt"
+                android:layout_alignBottom="@+id/tvPlayersCnt"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/number_picker_margin_right"
+                app:np_dividerColor="@color/colorPrimary"
+                app:np_height="@dimen/number_picker_height"
+                app:np_orientation="horizontal"
+                app:np_selectedTextColor="@color/colorPrimary"
+                app:np_selectedTextSize="@dimen/number_picker_selected_text_size"
+                app:np_textColor="@color/colorPrimary"
+                app:np_textSize="@dimen/number_picker_text_size"
+                app:np_width="@dimen/number_picker_width"
+                app:np_wrapSelectorWheel="false" />
+
+            <TextView
+                android:id="@+id/tvPlayersCntDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvPlayersCnt"
+                android:layout_marginStart="@dimen/text_item_desc_margin_left"
+                android:text="Выберите общее количество игроков."
+                android:textColor="@color/colorTextItemDesc"
+                android:textSize="@dimen/text_item_desc_size" />
+
+            <View
+                android:id="@+id/divPlayersCnt"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/tvPlayersCntDesc"
+                android:layout_marginVertical="@dimen/divider_vertical_margin"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/tvSpyMode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divPlayersCnt"
+                android:layout_marginStart="@dimen/text_item_margin_left"
+                android:text="@string/spyMode"
+                android:textColor="@color/colorTextItem"
+                android:textSize="@dimen/text_item_size" />
+
+            <!--Button
+                android:id="@+id/btnStandardSpyMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvSpyMode"
+                android:layout_toStartOf="@+id/btnRandSpyMode"
+                android:onClick="changeSpyMode"
+                android:textSize="@dimen/text_item_desc_size"
+                android:textColor="@color/colorTextItem"
+                android:paddingHorizontal="@dimen/btn_padding_horizontal"
+                android:paddingVertical="@dimen/btn_padding_vertical"
+                android:layout_marginVertical="@dimen/btn_margin_vertical"
+                android:layout_marginStart="@dimen/text_item_margin_left"
+                android:minHeight="@dimen/btn_min_height"
+                android:minWidth="@dimen/btn_min_width"
+                android:text="@string/standard_spy_mode" />
+
+            <Button
+                android:id="@+id/btnRandSpyMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvSpyMode"
+                android:onClick="changeSpyMode"
+                android:textSize="@dimen/text_item_desc_size"
+                android:textColor="@color/colorTextItem"
+                android:paddingHorizontal="@dimen/btn_padding_horizontal"
+                android:paddingVertical="@dimen/btn_padding_vertical"
+                android:layout_marginVertical="@dimen/btn_margin_vertical"
+                android:minHeight="@dimen/btn_min_height"
+                android:minWidth="@dimen/btn_min_width"
+                android:layout_centerHorizontal="true"
+                android:text="@string/rand_spy_mode" />
+
+            <Button
+                android:id="@+id/btnSlySpyMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvSpyMode"
+                android:layout_toEndOf="@+id/btnRandSpyMode"
+                android:onClick="changeSpyMode"
+                android:textSize="@dimen/text_item_desc_size"
+                android:textColor="@color/colorTextItem"
+                android:paddingHorizontal="@dimen/btn_padding_horizontal"
+                android:paddingVertical="@dimen/btn_padding_vertical"
+                android:layout_marginVertical="@dimen/btn_margin_vertical"
+                android:minHeight="@dimen/btn_min_height"
+                android:minWidth="@dimen/btn_min_width"
+                android:text="@string/sly_spy_mode" /-->
+
+            <LinearLayout
+                android:id="@+id/llSpyMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvSpyMode"
+                android:layout_centerHorizontal="true">
+
+                <Button
+                    android:id="@+id/btnStandardSpyMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/btn_margin_vertical"
+                    android:background="@drawable/spy_mode_selected_button"
+                    android:minWidth="@dimen/btn_min_width"
+                    android:minHeight="@dimen/btn_min_height"
+                    android:onClick="changeSpyMode"
+                    android:paddingHorizontal="@dimen/btn_padding_horizontal"
+                    android:paddingVertical="@dimen/btn_padding_vertical"
+                    android:text="@string/standard_spy_mode"
+                    android:textColor="@color/colorTextItem"
+                    android:textSize="@dimen/text_item_desc_size" />
+
+                <Button
+                    android:id="@+id/btnRandSpyMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/btn_margin_vertical"
+                    android:background="@drawable/spy_mode_selected_button"
+                    android:minWidth="@dimen/btn_min_width"
+                    android:minHeight="@dimen/btn_min_height"
+                    android:onClick="changeSpyMode"
+                    android:layout_marginHorizontal="@dimen/btn_spy_modes_margin_horizontal"
+                    android:paddingHorizontal="@dimen/btn_padding_horizontal"
+                    android:paddingVertical="@dimen/btn_padding_vertical"
+                    android:text="@string/rand_spy_mode"
+                    android:textColor="@color/colorTextItem"
+                    android:textSize="@dimen/text_item_desc_size" />
+
+                <Button
+                    android:id="@+id/btnSlySpyMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/btn_margin_vertical"
+                    android:background="@drawable/spy_mode_selected_button"
+                    android:minWidth="@dimen/btn_min_width"
+                    android:minHeight="@dimen/btn_min_height"
+                    android:onClick="changeSpyMode"
+                    android:paddingHorizontal="@dimen/btn_padding_horizontal"
+                    android:paddingVertical="@dimen/btn_padding_vertical"
+                    android:text="@string/sly_spy_mode"
+                    android:textColor="@color/colorTextItem"
+                    android:textSize="@dimen/text_item_desc_size" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/flSpyMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llSpyMode" />
+
+            <View
+                android:id="@+id/divSpyMode"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/flSpyMode"
+                android:layout_marginVertical="@dimen/divider_vertical_margin"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/tvTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divSpyMode"
+                android:layout_marginStart="@dimen/text_item_margin_left"
+                android:text="@string/timer"
+                android:textColor="@color/colorTextItem"
+                android:textSize="@dimen/text_item_size" />
+
+            <com.shawnlin.numberpicker.NumberPicker
+                android:id="@+id/npTimer"
+                android:layout_width="@dimen/number_picker_layout_width"
+                android:layout_height="@dimen/number_picker_layout_height"
+                android:layout_alignTop="@+id/tvTimer"
+                android:layout_alignBottom="@+id/tvTimer"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/number_picker_margin_right"
+                app:np_dividerColor="@color/colorPrimary"
+                app:np_height="@dimen/number_picker_height"
+                app:np_orientation="horizontal"
+                app:np_selectedTextColor="@color/colorPrimary"
+                app:np_selectedTextSize="@dimen/number_picker_selected_text_size"
+                app:np_textColor="@color/colorPrimary"
+                app:np_textSize="@dimen/number_picker_text_size"
+                app:np_width="@dimen/number_picker_width"
+                app:np_wrapSelectorWheel="false" />
+
+            <TextView
+                android:id="@+id/tvTimerDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTimer"
+                android:layout_marginStart="@dimen/text_item_desc_margin_left"
+                android:text="Укажите время, которое будет длится игра."
+                android:textColor="@color/colorTextItemDesc"
+                android:textSize="@dimen/text_item_desc_size" />
+
+            <View
+                android:id="@+id/divTimer"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/tvTimerDesc"
+                android:layout_marginVertical="@dimen/divider_vertical_margin"
+                android:background="?android:attr/listDivider" />
+
+            <!--TextView
+                android:id="@+id/tvIsSpySeeEachOther"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divTimer"
+                android:textSize="@dimen/text_item_size"
+                android:textColor="@color/colorTextItem"
+                android:layout_marginStart="@dimen/text_item_margin_left"
+                android:text="@string/isSpySeeEachOther" />
+
+            <CheckBox
+                android:id="@+id/cbIsSpySeeEachOther"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divTimer"
+                android:layout_alignBottom="@+id/tvIsSpySeeEachOther"
+                android:layout_toEndOf="@+id/tvIsSpySeeEachOther"
+                android:text="" /-->
+
+            <CheckBox
+                android:id="@+id/cbIsSpySeeEachOther"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divTimer"
+                android:layout_marginStart="@dimen/text_item_margin_left"
+                android:layout_marginEnd="@dimen/selected_margin_right"
+                android:button="@null"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:onClick="changeSpyVisibility"
+                android:text="@string/isSpySeeEachOther"
+                android:textColor="@color/colorTextItem"
+                android:textSize="@dimen/text_item_size" />
+
+            <TextView
+                android:id="@+id/tvIsSpySeeEachOtherDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cbIsSpySeeEachOther"
+                android:layout_marginStart="@dimen/text_item_desc_margin_left"
+                android:text="Знают ли шпионы кто их союзники?"
+                android:textColor="@color/colorTextItemDesc"
+                android:textSize="@dimen/text_item_desc_size" />
+
+            <!--TextView
+                android:id="@+id/tvIsSpySeeEachOtherDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvIsSpySeeEachOther"
+                android:textSize="@dimen/text_item_desc_size"
+                android:textColor="@color/colorTextItemDesc"
+                android:layout_marginStart="@dimen/text_item_desc_margin_left"
+                android:text="Знают ли шпионы кто их союзники?" /-->
+
+            <View
+                android:id="@+id/divIsSpySeeEachOther"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/tvIsSpySeeEachOtherDesc"
+                android:layout_marginVertical="@dimen/divider_vertical_margin"
+                android:background="?android:attr/listDivider" />
+
+            <!--TextView
+                android:id="@+id/tvIsSpyParadox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divIsSpySeeEachOther"
+                android:textSize="@dimen/text_item_size"
+                android:textColor="@color/colorTextItem"
+                android:layout_marginStart="@dimen/text_item_margin_left"
+                android:text="@string/isSpyParadox" />
+
+            <CheckBox
+                android:id="@+id/cbIsSpyParadox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divIsSpySeeEachOther"
+                android:layout_alignBottom="@+id/tvIsSpyParadox"
+                android:layout_toEndOf="@+id/tvIsSpyParadox"
+                android:text="" /-->
+
+            <CheckBox
+                android:id="@+id/cbIsSpyParadox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divIsSpySeeEachOther"
+                android:layout_marginStart="@dimen/text_item_margin_left"
+                android:layout_marginEnd="@dimen/selected_margin_right"
+                android:button="@null"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:onClick="changeSpyVisibility"
+                android:text="@string/isSpyParadox"
+                android:textColor="@color/colorTextItem"
+                android:textSize="@dimen/text_item_size" />
+
+            <TextView
+                android:id="@+id/tvIsSpyParadoxDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cbIsSpyParadox"
+                android:layout_marginStart="@dimen/text_item_desc_margin_left"
+                android:text="Знают ли шпионы о том, что они шпионы?"
+                android:textColor="@color/colorTextItemDesc"
+                android:textSize="@dimen/text_item_desc_size" />
+
+            <!--TextView
+                android:id="@+id/tvIsSpyParadoxDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvIsSpyParadox"
+                android:textSize="@dimen/text_item_desc_size"
+                android:textColor="@color/colorTextItemDesc"
+                android:layout_marginStart="@dimen/text_item_desc_margin_left"
+                android:text="Знают ли шпионы о том, что они шпионы?" /-->
+
+            <View
+                android:id="@+id/divIsSpyParadox"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/tvIsSpyParadoxDesc"
+                android:layout_marginVertical="@dimen/divider_vertical_margin"
+                android:background="?android:attr/listDivider" />
+
+            <!--TextView
+                android:id="@+id/tvIsDiffLoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divIsSpyParadox"
+                android:textSize="@dimen/text_item_size"
+                android:textColor="@color/colorTextItem"
+                android:layout_marginStart="@dimen/text_item_margin_left"
+                android:text="@string/isDiffLoc" />
+
+            <CheckBox
+                android:id="@+id/cbIsDiffLoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divIsSpyParadox"
+                android:layout_alignBottom="@+id/tvIsDiffLoc"
+                android:layout_toEndOf="@+id/tvIsDiffLoc"
+                android:text="" /-->
+
+            <CheckBox
+                android:id="@+id/cbIsDiffLoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divIsSpyParadox"
+                android:layout_marginStart="@dimen/text_item_margin_left"
+                android:layout_marginEnd="@dimen/selected_margin_right"
+                android:button="@null"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:enabled="false"
+                android:onClick="changeSpyVisibility"
+                android:text="@string/isDiffLoc"
+                android:textColor="@color/colorTextItemNotActive"
+                android:textSize="@dimen/text_item_size" />
+
+            <TextView
+                android:id="@+id/tvIsDiffLocDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cbIsDiffLoc"
+                android:layout_marginStart="@dimen/text_item_desc_margin_left"
+                android:text="Будет ли каждый шпион видеть разную локацию?"
+                android:textColor="@color/colorTextDescNotActive"
+                android:textSize="@dimen/text_item_desc_size" />
+
+            <!--TextView
+                android:id="@+id/tvIsDiffLocDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvIsDiffLoc"
+                android:textSize="@dimen/text_item_desc_size"
+                android:textColor="@color/colorTextItemDesc"
+                android:layout_marginStart="@dimen/text_item_desc_margin_left"
+                android:text="Будет ли каждый шпион видеть разную локацию?" /-->
+
+            <View
+                android:id="@+id/divIsDiffLoc"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/tvIsDiffLocDesc"
+                android:layout_marginVertical="@dimen/divider_vertical_margin"
+                android:background="?android:attr/listDivider" />
+
+            <!--TextView
+                android:id="@+id/tvIsSecure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divIsDiffLoc"
+                android:textSize="@dimen/text_item_size"
+                android:textColor="@color/colorTextItem"
+                android:layout_marginStart="@dimen/text_item_margin_left"
+                android:text="@string/isSecure" />
+
+            <CheckBox
+                android:id="@+id/cbIsSecure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divIsDiffLoc"
+                android:layout_alignBottom="@+id/tvIsSecure"
+                android:layout_toEndOf="@+id/tvIsSecure"
+                android:text="" /-->
+
+            <CheckBox
+                android:id="@+id/cbIsSecure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divIsDiffLoc"
+                android:layout_marginStart="@dimen/text_item_margin_left"
+                android:layout_marginEnd="@dimen/selected_margin_right"
+                android:button="@null"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:text="@string/isSecure"
+                android:textColor="@color/colorTextItem"
+                android:textSize="@dimen/text_item_size" />
+
+            <TextView
+                android:id="@+id/tvIsSecureDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cbIsSecure"
+                android:layout_marginStart="@dimen/text_item_desc_margin_left"
+                android:text="Использовать иммунитет для защиты игроков?"
+                android:textColor="@color/colorTextItemDesc"
+                android:textSize="@dimen/text_item_desc_size" />
+
+            <!--TextView
+                android:id="@+id/tvIsSecureDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvIsSecure"
+                android:textSize="@dimen/text_item_desc_size"
+                android:textColor="@color/colorTextItemDesc"
+                android:layout_marginStart="@dimen/text_item_desc_margin_left"
+                android:text="Использовать иммунитет для защиты игроков?" /-->
+
+            <View
+                android:id="@+id/divIsSecure"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/tvIsSecureDesc"
+                android:layout_marginVertical="@dimen/divider_vertical_margin"
+                android:background="?android:attr/listDivider" />
+
+            <!--TextView
+                android:id="@+id/tvIsCheckLoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divIsSecure"
+                android:textSize="@dimen/text_item_size"
+                android:textColor="@color/colorTextItem"
+                android:layout_marginStart="@dimen/text_item_margin_left"
+                android:text="@string/isCheckLoc" />
+
+            <CheckBox
+                android:id="@+id/cbIsCheckLoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/divIsSecure"
+                android:layout_alignBottom="@+id/tvIsCheckLoc"
+                android:layout_toEndOf="@id/tvIsCheckLoc"
+                android:text="" /-->
+
+            <!--CheckBox
+                android:id="@+id/cbIsCheckLoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/divIsSecure"
+                android:layout_marginStart="@dimen/text_item_margin_left"
+                android:layout_marginEnd="@dimen/selected_margin_right"
+                android:button="@null"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:onClick="checkLocations"
+                android:text="@string/isCheckLoc"
+                android:textColor="@color/colorTextItem"
+                android:textSize="@dimen/text_item_size" /-->
+
+            <TextView
+                android:id="@+id/tvIsCheckLoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/divIsSecure"
+                android:layout_marginStart="@dimen/text_item_margin_left"
+                android:text="@string/isCheckLoc"
+                android:textColor="@color/colorTextItem"
+                android:textSize="@dimen/text_item_size" />
+
+            <TextView
+                android:id="@+id/tvIsCheckLocDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvIsCheckLoc"
+                android:layout_marginStart="@dimen/text_item_desc_margin_left"
+                android:text="Указать локации, которые будут использоваться в данной игре?"
+                android:textColor="@color/colorTextItemDesc"
+                android:textSize="@dimen/text_item_desc_size" />
+
+            <Button
+                android:id="@+id/btnCheckLoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvIsCheckLocDesc"
+                android:layout_centerHorizontal="true"
+                android:layout_marginVertical="@dimen/btn_margin_vertical"
+                android:background="@drawable/spy_mode_selected_button"
+                android:minWidth="@dimen/btn_min_width"
+                android:minHeight="@dimen/btn_min_height"
+                android:onClick="checkLocations"
+                android:paddingHorizontal="@dimen/btn_padding_horizontal"
+                android:paddingVertical="@dimen/btn_padding_vertical"
+                android:text="@string/location_btn"
+                android:textColor="@color/colorTextItem"
+                android:textSize="@dimen/text_item_desc_size" />
+
+            <View
+                android:id="@+id/divLocations"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/btnCheckLoc"
+                android:layout_marginHorizontal="@dimen/divider_horizontal_margin"
+                android:layout_marginVertical="@dimen/divider_vertical_margin"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/tvSelectedLocations"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divLocations"
+                android:layout_marginStart="@dimen/text_item_desc_margin_left"
+                android:text=""
+                android:textColor="@color/colorTextItemDesc"
+                android:textSize="@dimen/text_item_desc_size" />
+
+            <!--TextView
+                android:id="@+id/tvIsCheckLocDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvIsCheckLoc"
+                android:textSize="@dimen/text_item_desc_size"
+                android:textColor="@color/colorTextItemDesc"
+                android:layout_marginStart="@dimen/text_item_desc_margin_left"
+                android:text="Указать локации, которые будут использоваться в данной игре?" /-->
+
+            <View
+                android:id="@+id/divCheckLoc"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/tvSelectedLocations"
+                android:layout_marginVertical="@dimen/divider_vertical_margin"
+                android:background="?android:attr/listDivider" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <!--Button
+        android:id="@+id/btnStartGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/spy_mode_selected_button"
+        android:text="НАЧАТЬ ИГРУ"
+        /-->
+
+</RelativeLayout>

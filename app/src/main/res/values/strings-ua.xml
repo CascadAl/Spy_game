@@ -1,0 +1,26 @@
+<resources>
+    <!--string name="app_name">Spy</string>
+    <string name="new_game_Btn">Нова гра</string>
+    <string name="choose_player_Btn">Показати</string>
+    <string name="hide_player_Btn">Приховати</string>
+    <string name="player">Гравець</string>
+    <string name="specific">Правила</string>
+    <string name="locations">Локації</string>
+    <string name="playersCnt">Кількість гравців</string>
+    <string name="spiesCnt">Кількість шпигунів</string>
+    <string name="play_game">Грати</string>
+    <string name="main_menu">Головне меню</string>
+    <string name="settings">Налаштування гри</string>
+    <string name="game">Гра</string>
+    <string name="rand_spies">рандомна кількість шпигунів</string>
+    <string name="players_start_cnt">гравців</string>
+    <string name="minutes">хв</string>
+    <string name="show_other_spies">Відображати інших шпигунів</string>
+    <string name="timer">Таймер</string>
+    <string name="timer_start">СТАРТ</string>
+    <string name="end_game">Гру закінчено</string>
+    <string name="other_spies_and">а також</string>
+    <string name="search_menu_title">Пошук</string>
+    <string name="spy_name">Шпигун</string>
+    <string name="timer_pause">ПАУЗА</string-->
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryLight">#00C3AE</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorSelectBtn">#199563</color>
+    <color name="colorCornerSelectBtn">#0D472F</color>
+    <color name="colorNotSelectBtn">#D6ECE3</color>
+
+    <color name="colorTextHead">#070707</color>
+    <color name="colorTextItem">#070707</color>
+    <color name="colorTextItemDesc">#070707</color>
+    <color name="colorTextItemNotActive">#919191</color>
+    <color name="colorTextDescNotActive">#919191</color>
+</resources>

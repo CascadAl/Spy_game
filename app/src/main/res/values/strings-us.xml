@@ -1,0 +1,26 @@
+<resources>
+    <!--string name="app_name">Spy</string>
+    <string name="new_game_Btn">New game</string>
+    <string name="choose_player_Btn">Show</string>
+    <string name="hide_player_Btn">Hide</string>
+    <string name="player">Player</string>
+    <string name="specific">Rules</string>
+    <string name="locations">Locations</string>
+    <string name="playersCnt">Number of players</string>
+    <string name="spiesCnt">Number of spies</string>
+    <string name="play_game">Play</string>
+    <string name="main_menu">Main menu</string>
+    <string name="settings">Game settings</string>
+    <string name="game">Game</string>
+    <string name="rand_spies">Random number of spies</string>
+    <string name="players_start_cnt">players</string>
+    <string name="minutes">minutes</string>
+    <string name="show_other_spies">Show other spies</string>
+    <string name="timer">Timer</string>
+    <string name="timer_start">START</string>
+    <string name="end_game">Game over</string>
+    <string name="other_spies_and">and</string>
+    <string name="search_menu_title">Search</string>
+    <string name="spy_name">Spy</string>
+    <string name="timer_pause">PAUSE</string-->
+</resources>

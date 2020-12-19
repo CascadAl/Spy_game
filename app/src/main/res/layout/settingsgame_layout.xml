@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_head"
+        android:textSize="@dimen/text_menu_dimen" />
+
+    <TextView
+        android:id="@+id/tvPlayersCnt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/settings_txt_top_margin"
+        android:text="@string/playersCnt" />
+
+    <EditText
+        android:id="@+id/etPlayersCnt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvSpiesCnt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/spiesCnt" />
+
+    <EditText
+        android:id="@+id/etSpiesCnt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text="" />
+
+    <CheckBox
+        android:id="@+id/cbRandSpies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="checkRandSpies"
+        android:text="@string/rand_spies" />
+
+    <EditText
+        android:id="@+id/etSpiesCntFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:inputType="number"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/etSpiesCntTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:inputType="number"
+        android:text="" />
+
+    <CheckBox
+        android:id="@+id/cbShowOtherSpies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_other_spies" />
+
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/timer" />
+
+    <EditText
+        android:id="@+id/etTimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text="" />
+
+    <Button
+        android:id="@+id/btnPlayGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="playGame"
+        android:text="@string/play_game" />
+</LinearLayout>

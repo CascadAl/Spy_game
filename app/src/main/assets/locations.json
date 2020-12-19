@@ -1,0 +1,527 @@
+[
+  {
+    "LocationID": 1,
+    "LocationName": "Больница",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 2,
+    "LocationName": "Школа",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 3,
+    "LocationName": "Детский сад",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 4,
+    "LocationName": "Шкаф",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 5,
+    "LocationName": "Антарктида",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 6,
+    "LocationName": "Аквапарк",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 7,
+    "LocationName": "Морг",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 8,
+    "LocationName": "Мавзолей",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 9,
+    "LocationName": "Офис",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 10,
+    "LocationName": "Супермаркет",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 11,
+    "LocationName": "Магазин женского белья",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 12,
+    "LocationName": "Бойцовский ринг",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 13,
+    "LocationName": "Пиратский корабль",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 14,
+    "LocationName": "Квест комната",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 15,
+    "LocationName": "Кинотеатр",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 16,
+    "LocationName": "Боулинг",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 17,
+    "LocationName": "Библиотека",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 18,
+    "LocationName": "Кладбище",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 19,
+    "LocationName": "Туалет",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 20,
+    "LocationName": "Пустыня",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 21,
+    "LocationName": "Воздушный шар",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 22,
+    "LocationName": "Мост",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 23,
+    "LocationName": "Подводная лодка",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 24,
+    "LocationName": "Парк",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 25,
+    "LocationName": "Заповедник",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 26,
+    "LocationName": "Зоопарк",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 27,
+    "LocationName": "Подъезд",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 28,
+    "LocationName": "Море",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 29,
+    "LocationName": "Гора",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 30,
+    "LocationName": "Аеропорт",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 31,
+    "LocationName": "Театр",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 32,
+    "LocationName": "Кафе",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 33,
+    "LocationName": "Горка",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 34,
+    "LocationName": "Балкон",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 35,
+    "LocationName": "Дача",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 36,
+    "LocationName": "Космическая станция",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 37,
+    "LocationName": "Крепость",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 38,
+    "LocationName": "Замок",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 39,
+    "LocationName": "Поле",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 40,
+    "LocationName": "Стройка",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 41,
+    "LocationName": "Церковь",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 42,
+    "LocationName": "Резиденция Деда Мороза",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 43,
+    "LocationName": "Салон красоты",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 44,
+    "LocationName": "Дельфинарий",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 45,
+    "LocationName": "Ванная",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 46,
+    "LocationName": "Баня",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 47,
+    "LocationName": "Рыбацкий причал",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 48,
+    "LocationName": "Лес",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 49,
+    "LocationName": "Бермудский треугольник",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 50,
+    "LocationName": "Такси",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 51,
+    "LocationName": "Зона 51",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 52,
+    "LocationName": "База террористов",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 53,
+    "LocationName": "Стоматология",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 54,
+    "LocationName": "Ипподром",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 55,
+    "LocationName": "Футбольное поле",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 56,
+    "LocationName": "Качалка",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 57,
+    "LocationName": "Парковка",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 58,
+    "LocationName": "Площадка для гольфа",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 59,
+    "LocationName": "Пейнтбол",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 60,
+    "LocationName": "Консульство",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 61,
+    "LocationName": "Станция технического обслуживания",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 62,
+    "LocationName": "Необитаемый остров",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 63,
+    "LocationName": "Хогвартс",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 64,
+    "LocationName": "Каток",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 65,
+    "LocationName": "Американские горки",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 66,
+    "LocationName": "Автодром",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 67,
+    "LocationName": "Музей",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 68,
+    "LocationName": "Метро",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 69,
+    "LocationName": "Лунопарк",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 70,
+    "LocationName": "Университет",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 71,
+    "LocationName": "Завод",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 72,
+    "LocationName": "Аптека",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 73,
+    "LocationName": "Аэропорт",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 74,
+    "LocationName": "Секта",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 75,
+    "LocationName": "Тренажёрный зал",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 76,
+    "LocationName": "Планета Марс",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 77,
+    "LocationName": "Корпоративная вечеринка",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 78,
+    "LocationName": "Автосалон",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 79,
+    "LocationName": "Самолёт",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 80,
+    "LocationName": "Звёзды",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 81,
+    "LocationName": "Ледниковый период",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 82,
+    "LocationName": "Университет",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 83,
+    "LocationName": "Тату-салон",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 84,
+    "LocationName": "Пшеничное поле",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 85,
+    "LocationName": "Ресторан",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 86,
+    "LocationName": "Ночной клуб",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 87,
+    "LocationName": "Рабство",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 88,
+    "LocationName": "Астероид",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 89,
+    "LocationName": "Избушка бабы яги",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 90,
+    "LocationName": "Свалка",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 91,
+    "LocationName": "Чернобыль",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 92,
+    "LocationName": "Караоке",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 93,
+    "LocationName": "Замок из песка",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 94,
+    "LocationName": "Батутный центр",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 95,
+    "LocationName": "Белый дом",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 96,
+    "LocationName": "Крепость",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 97,
+    "LocationName": "Бомбоубежище",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 98,
+    "LocationName": "Рок - концерт",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 99,
+    "LocationName": "Дом престарелых",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 100,
+    "LocationName": "Шахта",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 101,
+    "LocationName": "Рай",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 102,
+    "LocationName": "Ад",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 103,
+    "LocationName": "Чистилище",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 104,
+    "LocationName": "Вертолёт",
+    "IsChecked": true
+  },
+  {
+    "LocationID": 105,
+    "LocationName": "Шатл",
+    "IsChecked": true
+  }
+]
